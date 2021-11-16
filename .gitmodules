@@ -1,0 +1,3 @@
+[submodule "tree-sitter-sqlite"]
+	path = tree-sitter-sqlite
+	url = https://github.com/returntocorp/tree-sitter-sqlite/
