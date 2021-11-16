@@ -11,6 +11,9 @@ fn main() -> Result<()> {
     let mut rl = Editor::<()>::new();
     loop {
         let line = rl.readline("xlite> ")?;
+        let tree = parser.parse(&line, None).unwrap();
+        let root_node = tree.root_node();
         println!("Line: {}", line); // eval / print
+        println!("Root Node Kind: {}", root_node.kind()); // eval / print
     }
 }
